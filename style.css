@@ -68,6 +68,21 @@ nav {
 }
 
 
+@media (max-width:480px) {
+    .none {
+        display: none;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    .ul-nav {
+        gap: 20px;
+    }
+}
+
+
 
 
 main {
@@ -116,6 +131,31 @@ aside {
 }
 
 
+@media (max-width: 480px) {
+    
+    .section-1 {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+}
+
 /* SECTION 2 WORK PROGRAM */
 
 
@@ -130,7 +170,7 @@ aside {
 
 
 
-.section-2 .container-2 {
+.container-2 {
     display: flex;
     gap: 200px;
     padding: 50px;
@@ -172,6 +212,10 @@ aside {
     background-color: #C70039;
     border-radius: 20px;
     color: white;
+}
+
+.content-2 {
+    margin-bottom: 0;
 }
 
 .container-2-1 h1 {
@@ -220,6 +264,76 @@ aside {
 }
 
 
+@media (max-width:480px){
+
+    
+    .container-2 {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .podcast {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        margin-top: 0;
+        align-items: center;
+        padding-top: 0;
+        
+    }
+
+    .podcast img {
+        width: 100%;
+    }
+
+    .content-2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+
+    .container-2 aside img{
+        width: 100%;
+    }
+
+    .container-2-1 {
+        padding-inline: 10px;
+    }
+
+    .container-2-1 h1 {
+        font-size: 1.7rem;
+        padding-inline: 10px;
+    }
+
+    .container-2-1 main{
+        flex-direction: column;
+        font-size: 1rem;
+
+        gap: 50px;
+    }
+
+    .container-2-1 main div {
+        padding-inline: 20px;
+    }
+
+    .container-2-1 main p {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .container-2-1 main img {
+        width: 100%;
+    }
+}
+
+
+
+
+
 /* SECTION 3 */
 
 .section-3 {
@@ -265,7 +379,24 @@ aside {
     background-color: rgba(255, 255, 255, 0.318);
 }
 
+@media (max-width:480px) {
+    .section-3 {
+        flex-direction: column;
+        padding-inline: 30px;
+    }
 
+    .section-3 article {
+        width: 100%;
+    }
+
+    .section-3 aside {
+        width: 100%;
+    }
+
+    .section-3 aside img {
+        width: 100%;
+    }
+}
 
 
 /* footer */
@@ -281,6 +412,7 @@ footer {
     justify-content: center;
 
     margin-top: 50px;
+    
 
 }
 
@@ -309,6 +441,8 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+
+
 .social-icons a:hover {
     background-color: white;
     color: #133E87;
@@ -318,7 +452,11 @@ footer p {
     font-size: 12px;
 }
 
-
+@media (max-width:480px) {
+    .social-icons a {
+        font-size: 10px;
+    }
+}
 
 
 
@@ -383,4 +521,14 @@ button:hover {
     display: flex;
     justify-content: left;
     margin: 0;
+}
+
+@media (max-width:480px) {
+    .medsos-icon {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
 }
